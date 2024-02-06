@@ -1,4 +1,4 @@
-package lesson1.quiz1;
+package lesson1.quiz1.Q7;
 
 import java.time.LocalDate;
 
