@@ -17,7 +17,7 @@ public class DataType {
         char charValue = 'A';
         String stringValue = "Hello, World Apizr";
 
-        System.out.println("Data Typesss:");
+        System.out.println("Data Types:");
         System.out.println("Integer Value: " + integerNumber);
         System.out.println("Double Value: " + doubleNumber);
         System.out.println("Boolean Value: " + boolValue);
