@@ -2,7 +2,7 @@ package lesson1.quiz1.Q7;
 
 import java.time.LocalDate;
 
-public class question7 {
+public class Test {
 
     public static void main(String[] args) {
 
