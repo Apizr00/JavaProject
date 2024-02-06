@@ -5,7 +5,6 @@ public class DataType {
     public static void main(String[] args) {
 
         System.out.println("Number Of Arguments: " + args.length);
-        System.out.println("Arguments Passed");
 
         for (int i = 0; i < args.length; i++) {
 
