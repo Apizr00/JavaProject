@@ -2,7 +2,7 @@ package lesson1.quiz1.Q2;
 
 public class Test {
 
-    static int i1 = 10;
+    int i1 = 10;
     int i2 = 20;
 
     int add() {
