@@ -7,8 +7,8 @@ public class exercise1 {
     int j = 10;
     double d1, d2, d3;
     boolean p;
-    private Object k;
-    private int a;
+    // private Object k;
+    // private int a;
 
     public static void main(String[] args) {
 
@@ -18,11 +18,11 @@ public class exercise1 {
 
     public void exercise1Calculate() {
 
-        int k;
-        int a;
+        // int k;
+        // int a;
 
-        this.k = this.a + this.b - 10;
-        this.p = (a >= b);
+        // this.k = this.a + this.b - 10;
+        // this.p = (a >= b);
         System.out.println("go");
         double squareRoot = Math.sqrt(2);
 
