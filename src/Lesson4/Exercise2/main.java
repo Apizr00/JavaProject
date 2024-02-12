@@ -11,9 +11,4 @@ public class main {
         System.out.println("Area of circle: " + circle.calculateArea());
     }
 
-    public abstract class Shape {
-
-        public abstract double calculateArea();
-    }
-
 }

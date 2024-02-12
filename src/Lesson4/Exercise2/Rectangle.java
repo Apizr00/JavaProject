@@ -1,7 +1,5 @@
 package Lesson4.Exercise2;
 
-import Lesson4.Exercise2.main.Shape;
-
 public class Rectangle extends Shape {
 
     private double length;
