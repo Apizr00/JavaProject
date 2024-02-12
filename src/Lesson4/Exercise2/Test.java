@@ -2,7 +2,6 @@ package Lesson4.Exercise2;
 
 import java.time.LocalDate;
 import java.time.Month;
-import java.time.Period;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
