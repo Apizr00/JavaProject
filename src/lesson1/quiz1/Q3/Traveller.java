@@ -1,4 +1,4 @@
-package lesson1.quiz1.Q3;
+package Lesson1.quiz1.Q3;
 
 abstract class Traveller {
 
