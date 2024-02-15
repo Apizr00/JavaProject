@@ -1,6 +1,6 @@
 package Lesson8.Example;
 
-public class Rectangle implements Shape {
+public class Rectangle extends Border implements Shape {
 
     private double length, width;
 

@@ -1,6 +1,6 @@
 package Lesson8.Example;
 
-public class Circle implements Shape {
+public class Circle extends Border implements Shape {
 
     private double radius;
 
