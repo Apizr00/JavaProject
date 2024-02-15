@@ -1,4 +1,4 @@
-package lesson1.quiz1.Q1;
+package Lesson1.quiz1.Q1;
 
 public class Q1 {
 

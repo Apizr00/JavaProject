@@ -1,4 +1,4 @@
-package lesson1;
+package Lesson1;
 
 public class StringHandler {
 

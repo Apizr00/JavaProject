@@ -1,4 +1,4 @@
-package lesson1.assignment1;
+package Lesson1.assignment1;
 
 public class DataType {
 
