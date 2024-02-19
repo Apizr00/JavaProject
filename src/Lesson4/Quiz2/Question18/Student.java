@@ -7,7 +7,7 @@ class Student {
 
     Student() {
 
-        Student("James", 25);
+        this("James", 25);
 
     }
 

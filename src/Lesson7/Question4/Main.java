@@ -1,6 +1,6 @@
 package Lesson7.Question4;
 
-import java.io.FileNotFoundException;
+//import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 

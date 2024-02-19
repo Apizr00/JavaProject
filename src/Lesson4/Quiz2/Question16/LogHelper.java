@@ -2,7 +2,7 @@ package Lesson4.Quiz2.Question16;
 
 public class LogHelper extends Helper {
 
-    private int num = 200;
+    // private int num = 200;
     protected String operation = "LOGGING";
 
     void help() {
