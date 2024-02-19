@@ -1,13 +1,14 @@
 package Lesson10.Question7;
 
+// EnhancedChatApplication.java
 public class EnhancedChatApplication extends AbstractChatApplication {
 
-    public EnhancedChatApplication() {
+    public EnhancedChatApplication(EncryptionStrategy encryptionStrategy) {
 
-        super(); // Call the constructor of the abstract class
+        super();
+        this.encryptionStrategy = encryptionStrategy;
     }
 
-    // Implement the abstract method
     @Override
     protected void sendMessage() {
 
@@ -16,16 +17,19 @@ public class EnhancedChatApplication extends AbstractChatApplication {
         if (!userMessage.isEmpty()) {
 
             String recipient = (String) recipientComboBox.getSelectedItem();
-            chatArea.append(recipient + ": " + userMessage + "\n");
+            displayMessage(recipient, userMessage);
             messageField.setText("");
 
-            // Implement encryption (Caesar Cipher) for messages
-            String encryptedMessage = encryptMessage(userMessage);
-            chatArea.append("Encrypted Message: " + encryptedMessage + "\n");
+            String encryptedMessage = encryptionStrategy.encrypt(userMessage);
+            displayEncryptedMessage(encryptedMessage);
 
-            // Auto-reply logic
             handleAutoReply(recipient);
         }
     }
 
+    @Override
+    protected void handleAutoReply(String recipient) {
+
+        // Implement auto-reply logic specific to EnhancedChatApplication
+    }
 }

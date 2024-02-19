@@ -1,4 +1,4 @@
-package Lesson10.Question7;
+package Lesson10.Question7_v3;
 
 // AbstractChatApplication.java
 import javax.swing.*;
@@ -6,7 +6,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public abstract class AbstractChatApplication extends JFrame {
+abstract class AbstractChatApplication extends JFrame {
 
     protected JTextField messageField;
     protected JTextArea chatArea;
@@ -14,7 +14,6 @@ public abstract class AbstractChatApplication extends JFrame {
     protected EncryptionStrategy encryptionStrategy;
 
     public AbstractChatApplication() {
-        // Basic Setup
         setTitle("Enhanced Chat Application");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(600, 400);
@@ -32,10 +31,8 @@ public abstract class AbstractChatApplication extends JFrame {
         recipientComboBox = new JComboBox<>(recipients);
 
         sendButton.addActionListener(new ActionListener() {
-
             @Override
             public void actionPerformed(ActionEvent e) {
-
                 sendMessage();
             }
         });
@@ -49,22 +46,26 @@ public abstract class AbstractChatApplication extends JFrame {
         add(inputPanel, BorderLayout.SOUTH);
 
         setVisible(true);
+
+        retrieveAndDisplayData();
     }
 
     protected abstract void sendMessage();
 
     protected void displayMessage(String sender, String message) {
-
         chatArea.append(sender + ": " + message + "\n");
     }
 
     protected void displayEncryptedMessage(String encryptedMessage) {
-
         chatArea.append("Encrypted Message: " + encryptedMessage + "\n");
     }
 
     protected void handleAutoReply(String recipient) {
-
         // Implement auto-reply logic in subclasses
+    }
+
+    private void retrieveAndDisplayData() {
+
+        SqlService.retrieveAndDisplayData(this);
     }
 }
