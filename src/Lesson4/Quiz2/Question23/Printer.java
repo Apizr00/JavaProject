@@ -15,7 +15,7 @@
 
 package Lesson4.Quiz2.Question23;
 
-import java.util.*;
+//import java.util.*;
 
 public class Printer {
 

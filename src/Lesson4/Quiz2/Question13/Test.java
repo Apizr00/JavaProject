@@ -10,21 +10,19 @@ public class Test {
         Super s = new Sub();
 
         try {
-
             s.m1();
-
-        } catch (IOException e) {
-
-            System.out.println("A");
 
         } catch (FileNotFoundException e) {
 
             System.out.println("B");
 
+        } catch (IOException e) {
+
+            System.out.println("A");
+
         } finally {
 
             System.out.println("C");
-
         }
     }
 

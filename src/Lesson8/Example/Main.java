@@ -2,7 +2,7 @@ package Lesson8.Example;
 
 public class Main {
 
-    private static Border cirlce;
+    // private static Border cirlce;
 
     public static void main(String[] args) {
 
