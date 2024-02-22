@@ -5,7 +5,8 @@ public class Test {
     public static void main(String[] args) {
 
         int num = 10;
-        if (num++ == num++) {
+
+        if (++num == ++num) {
 
             System.out.println("EQUAL " + num);
 

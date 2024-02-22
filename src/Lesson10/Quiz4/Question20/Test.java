@@ -15,7 +15,7 @@ public class Test {
         list.add("I");
         list.add("O");
         list.add("U");
-        list.addAll(list.subList(0, 4));
+        list.addAll(list.subList(0, 3));
         System.out.println(list);
 
     }
